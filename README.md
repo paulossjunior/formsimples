@@ -2,7 +2,7 @@
 
 O Form Simples é um exemplo de aplicação web que visa apresentar como uma aplicação em Flask pega dados de um formulário. O que vamos utilizar:
 
-* __Linguagem de Programação__: [Python] (https://www.python.org)
+* __Linguagem de Programação__: [Python](https://www.python.org)
 * __Framework Web__: [Flask](http://flask.pocoo.org)
 * __Repositório de códigos__: [Git](https://git-scm.com)
 
