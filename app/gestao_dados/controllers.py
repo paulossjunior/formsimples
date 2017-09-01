@@ -11,10 +11,20 @@ def formulario():
     ''' Verificando se o dado foi enviado via POST '''
 
     if request.method == 'POST':
+
         mensagem = 'Dados Enviado via Post'
         dados = request.form.to_dict()
+        nome = request.form['nome']
+
+        if nome == 'luke':
+            mensagem = mensagem + 'Star War é Legal!!'
     else:
+
         mensagem = 'Dados Enviado via Get'
         dados = request.args.to_dict()
+        nome = request.args['nome']
+
+        if nome == 'luke':
+            mensagem = mensagem + 'Star War é Legal!!'
 
     return render_template('resultado.html',mensagem = mensagem, dados = dados)
